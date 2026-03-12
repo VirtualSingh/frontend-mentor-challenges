@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
 *,*::after,*::before {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+html,body{
+    font-family: 'Figtree', sans-serif; 
+    color: hsl(0, 0%, 7%);
+     font-size: 14px;
+}
 .container{
     background-color: hsl(47, 88%, 63%);
     min-height:100vh;
@@ -16,6 +21,49 @@
 .container .card{
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
-    padding: 16px;
-    max-width: 320px;
+    padding: 24px;
+    max-width: 384px;
+}
+.container .card img.card-image{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.container .card .card-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    text-align: left; 
+    margin-bottom: 24px;
+}
+.container .card .card-content .card-category{ 
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px; 
+  padding: 4px 12px;  
+  font-weight: bold;
+ 
+}
+.container .card .card-content .card-title{
+ font-size: 24px;
+  font-weight: 800;
+}
+.container .card .card-content .description{
+ font-size: 16px;
+ color: hsl(0, 0%, 42%);
+}
+.container .card  .author{
+    display: flex;
+    align-items: center;
+    gap: 12px;    
+}
+.container .card  .author img.author-avatar{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.container .card  .author .author-name{
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
 }
